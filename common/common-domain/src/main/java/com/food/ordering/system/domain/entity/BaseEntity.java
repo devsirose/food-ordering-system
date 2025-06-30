@@ -1,9 +1,11 @@
 package com.food.ordering.system.domain.entity;
 
-import java.io.Serializable;
+import lombok.*;
 
-public abstract class BaseEntity<Id extends Serializable> implements Serializable {
+@Getter
+@Setter
+@EqualsAndHashCode
+@AllArgsConstructor
+public abstract class BaseEntity<Id> {
     private Id id;
-
-
 }

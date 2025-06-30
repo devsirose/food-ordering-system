@@ -1,4 +1,12 @@
 package com.food.ordering.system.domain.entity;
 
-public class AggregateRoot {
+import lombok.*;
+
+@Getter
+@Setter
+@EqualsAndHashCode(callSuper = true)
+public class AggregateRoot<Id> extends BaseEntity<Id> {
+    public AggregateRoot(Id id) {
+        super(id);
+    }
 }

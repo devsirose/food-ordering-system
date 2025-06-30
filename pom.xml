@@ -24,6 +24,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven-compile-plugin.version>3.14.0</maven-compile-plugin.version>
+        <lombok-version>1.18.36</lombok-version>
     </properties>
 
     <dependencyManagement>
@@ -62,7 +63,7 @@
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.18.38</version>
+                <version>${lombok-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
